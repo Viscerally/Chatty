@@ -5,12 +5,18 @@ class Chatbar extends Component {
   constructor(props){
     super(props) 
   }
+
+onPressEnter = (event) => {
+  if(event.which === 13){
+    this.props.handleNewMessage(event.target.value);
+  }
+}
   
   render() {
     return (
       <footer className="chatbar">
         <input className="chatbar-username" placeholder="Your Name (Optional)" defaultValue={this.props.currentUser} />
-        <input className="chatbar-message" placeholder="Type a message and hit ENTER" onClick= {this.props.passMessage} />
+        <input className="chatbar-message" placeholder="Type a message and hit ENTER" onKeyPress= {this.onPressEnter} />
       </footer>
     );
   }

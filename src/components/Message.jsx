@@ -5,21 +5,22 @@ class Message extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      userName: "",
+      userName: '',
       messageList: [],
     }
   }
 
+  
 
   render() {
     return (
       <div>
         <div className="message">
-          <span className="message-username">Anonymous1</span>
-          <span className="message-content">{this.props.userName}</span>
+          <span className="message-username">{this.props.message.username}</span>
+          <span className="message-content">{this.props.message.content}</span>
         </div>
         <div className="message system">
-          Anonymous1 changed their name to nomnom.
+          {/* {'jumps down'} */}
   </div>
       </div>
     );
