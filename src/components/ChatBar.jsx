@@ -11,11 +11,17 @@ onPressEnter = (event) => {
     this.props.handleNewMessage(event.target.value);
   }
 }
+
+onNameEnter = (event) => {
+  if(event.which === 13){
+    this.props.handleNewUsername(event.target.value);
+  }
+}
   
   render() {
     return (
       <footer className="chatbar">
-        <input className="chatbar-username" placeholder="Your Name (Optional)" defaultValue={this.props.currentUser} />
+        <input className="chatbar-username" placeholder="Your Name (Optional)" defaultValue={this.props.currentUser} onKeyPress= {this.onNameEnter} />
         <input className="chatbar-message" placeholder="Type a message and hit ENTER" onKeyPress= {this.onPressEnter} />
       </footer>
     );

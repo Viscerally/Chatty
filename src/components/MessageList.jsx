@@ -10,8 +10,8 @@ class MessageList extends Component {
   render() {
     const messages = this.props.messages;
     const messageList = messages.map((message) => {
-      console.log(message);
-      return (<Message key={message.id} message={message} />)
+      // console.log(message);
+      return (<Message key={message.id} message={message} currentUser={this.props.currentUser} />)
     })
     return (
       <main className="messages">
