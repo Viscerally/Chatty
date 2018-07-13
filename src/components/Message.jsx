@@ -10,20 +10,22 @@ class Message extends Component {
     }
   }
 
-  
+
 
   render() {
+    if (this.props.message.type === 'message') {
+      return (
+          <div className="message">
+            <span className="message-username">{this.props.message.username}</span>
+            <span className="message-content">{this.props.message.content}</span>
+          </div>
+      );
+    }
     return (
-      <div>
-        <div className="message">
-          <span className="message-username">{this.props.message.username}</span>
-          <span className="message-content">{this.props.message.content}</span>
-        </div>
-        <div className="message system">
-          {/* {'jumps down'} */}
-  </div>
+      <div className="notification">
+        <span className="notification-content">{this.props.message.content}</span>
       </div>
-    );
+    )
   }
 }
 export default Message;

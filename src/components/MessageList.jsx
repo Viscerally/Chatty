@@ -6,7 +6,6 @@ class MessageList extends Component {
     super(props)
   }
 
-
   render() {
     const messages = this.props.messages;
     const messageList = messages.map((message) => {
