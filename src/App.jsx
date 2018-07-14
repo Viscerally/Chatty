@@ -15,13 +15,13 @@ class App extends Component {
       messages: [
         {
           id: 1,
-          username: 'Kevin',
-          content: 'Spiders are the only web developers who like bugs',
+          username: '',
+          content: '',
         },
         {
           id: 2,
-          username: 'Anon',
-          content: 'be me. be anon.'
+          username: '',
+          content: ''
         }
       ],
     }

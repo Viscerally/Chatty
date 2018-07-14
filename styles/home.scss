@@ -73,12 +73,15 @@ body {
   top: 0;
 }
 
+.notification-content {
+  font-style: italic;
+}
 .navbar-brand {
   color: inherit;
   display: block;
   float: left;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 38px;
   height: 60px;
   line-height: 60px;
   padding: 0 10px;
@@ -86,5 +89,7 @@ body {
 }
 
 .navbar-usercount {
-  color:red;
+  color:blue;
+  margin: auto 80%;
+  font-size: 20px;
 }
