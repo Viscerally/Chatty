@@ -1,5 +1,5 @@
 body {
-  background: white;
+  background: seashell;
   color: black;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
@@ -7,7 +7,7 @@ body {
 }
 
 .chatbar {
-  // background: #593C8F;
+  background: #4F38F7;
   border-top: 1px solid black;
   bottom: 0;
   display: flex;
@@ -63,7 +63,7 @@ body {
 
 .navbar {
   display:flex;
-  background: tomato;
+  background-color:#161C12;
   border-bottom: 1px solid black;
   height: 60px;
   left: 0;
@@ -75,9 +75,11 @@ body {
 
 .notification-content {
   font-style: italic;
+  color:grey;
+  margin: 20%;
 }
 .navbar-brand {
-  color: inherit;
+  color: white;
   display: block;
   float: left;
   font-weight: 700;
@@ -89,7 +91,7 @@ body {
 }
 
 .navbar-usercount {
-  color:blue;
+  color:yellow;
   margin: auto 80%;
   font-size: 20px;
 }
