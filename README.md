@@ -3,7 +3,7 @@ A single page application that is a real-time chat room using React.js and Webso
 
 ## Screenshots
 
-![]()
+![Some functionality](https://i.imgur.com/SbcGin8.gif)
 
 
 ![]()
