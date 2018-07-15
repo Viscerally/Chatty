@@ -54,7 +54,7 @@ class App extends Component {
   }
 
   handleNotifications = (content) => {
-    const messageObj = { type: "notification", content: this.state.currentUser + " has changed their name to " + content };
+    const messageObj = { type: "notification", content: "🚩 " + this.state.currentUser + " has changed their name to " + content };
     this.superSocket.send(JSON.stringify(messageObj));
   }
 
